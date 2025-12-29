@@ -1,0 +1,710 @@
+.wrap {
+  width: 100%;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+}
+
+/* header section */
+.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--g100);
+  background-color: var(--white);
+}
+.header .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  position: relative;
+}
+.header .logo a {
+}
+.header .logo a h1 {
+  font-size: var(--xx-large);
+  font-weight: 600;
+  color: var(--p600);
+  text-align: center;
+}
+.nav {
+  position: relative;
+}
+.nav ul {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  align-items: center;
+}
+.nav ul li {
+  position: relative;
+}
+.nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--large);
+  border-bottom: 2px solid transparent;
+  font-size: var(--large);
+  font-weight: 500;
+  color: var(--g600);
+  text-align: center;
+  letter-spacing: -0.32px;
+}
+.nav ul li:hover a {
+  border-bottom: 2px solid var(--p500);
+  color: var(--s900);
+}
+.utils {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  align-items: center;
+}
+.mb-menu {
+  display: none;
+}
+.mb-menu img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.employ-btn {
+  /* height: 32px; */
+  display: flex;
+  gap: var(--xx-small);
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--small);
+  background-color: var(--s900);
+  border-radius: 10px;
+}
+.employ-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.employ-btn span {
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: -0.32px;
+}
+
+/* hero section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 830px;
+}
+.hero-image {
+  position: relative;
+}
+.hero-image img {
+  width: 100%;
+  height: 830px;
+  object-fit: cover;
+}
+.introduce-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  gap: var(--xx-large);
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 40px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.introduce {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.introduce .title {
+  position: relative;
+}
+.introduce .title p {
+  font-size: var(--heading1);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--white);
+  letter-spacing: -0.96px;
+}
+.introduce .sub-title {
+  position: relative;
+}
+.introduce .sub-title p {
+  font-size: var(--xxx-large);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--p500);
+  letter-spacing: -0.64px;
+}
+.introduce .sub-title span {
+  font-size: var(--xx-large);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--white);
+  letter-spacing: -0.48px;
+}
+.project-btn {
+  display: flex;
+  gap: var(--xx-small);
+  align-items: center;
+  justify-content: center;
+  padding: var(--x-small) var(--large);
+  background-color: var(--white);
+  border-radius: var(--x-small);
+}
+.project-btn span {
+  color: var(--s900);
+}
+.project-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* skill section */
+.skill-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.skill-section .inner {
+  min-width: 1025px;
+  display: flex;
+  gap: var(--xxxx-large);
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* project section과 공통 스타일 시작 */
+.section-title {
+  position: relative;
+  display: flex;
+  gap: var(--xx-small);
+  flex-direction: column;
+}
+.section-title .title {
+  position: relative;
+}
+.section-title .title h2 {
+  font-size: var(--xxxx-large);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--s900);
+  letter-spacing: -0.72px;
+}
+.section-title .sub-title {
+  position: relative;
+}
+.section-title .sub-title p {
+  font-size: var(--xx-large);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--g600);
+  letter-spacing: -0.48px;
+}
+.contents {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+/* project section과 공통 스타일 끝 */
+
+.skill-section .contents .card {
+  position: relative;
+  min-width: 280px;
+  max-width: 380px;
+  flex: 1 0 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: var(--medium);
+}
+.skill-section .contents .card .thumbnail {
+  position: relative;
+  width: 100%;
+  max-height: 192px;
+  aspect-ratio: 95/48;
+}
+.skill-section .contents .card .thumbnail figure {
+  position: relative;
+}
+.skill-section .contents .card .thumbnail figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill-section .contents .card .thumbnail .badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--small);
+  background-color: var(--s900);
+  border-radius: 15px;
+}
+.skill-section .contents .card .thumbnail .badge span {
+  font-size: var(--medium);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: -0.28px;
+}
+.skill-section .contents .card .thumbnail .badge.best {
+  background-color: var(--p600);
+}
+.skill-section .contents .card .card-info {
+  position: relative;
+  padding: var(--xx-large);
+}
+.skill-section .contents .card .card-info .card-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--large);
+}
+.skill-section .contents .card .card-info .card-title h4 {
+  font-size: var(--x-large);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--s900);
+  letter-spacing: -0.4px;
+}
+.skill-section .contents .card .card-info .card-title .stars {
+  position: relative;
+  display: flex;
+  gap: var(--xx-small);
+  align-items: center;
+}
+.skill-section .contents .card .card-info .card-title .stars li {
+  position: relative;
+}
+.skill-section .contents .card .card-info .card-title .stars li img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.skill-section .contents .card .card-info .skill-list {
+  display: flex;
+  gap: var(--xx-small);
+  flex-direction: column;
+  margin-bottom: var(--xxx-large);
+}
+.skill-section .contents .card .card-info .skill-list .skill {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  align-items: center;
+}
+.skill-section .contents .card .card-info .skill-list .skill img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.skill-section .contents .card .card-info .skill-list .skill span {
+  line-height: var(--xx-large);
+  color: var(--s800);
+}
+.skill-section .contents .card .card-info .show-more {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--small) 0;
+  background-color: var(--s900);
+  border-radius: var(--small);
+}
+.skill-section .contents .card .card-info .show-more span {
+  font-weight: 500;
+  color: var(--g100);
+  text-align: center;
+}
+
+/* project section */
+.project-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.project-section .inner {
+  min-width: 1025px;
+  display: flex;
+  gap: var(--xxxx-large);
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.project-section .contents .card {
+  position: relative;
+  min-width: 280px;
+  max-width: 380px;
+  flex: 1 0 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: var(--medium);
+}
+.project-section .contents .card .thumbnail {
+  position: relative;
+  width: 100%;
+  max-height: 192px;
+  aspect-ratio: 95/48;
+}
+.project-section .contents .card .thumbnail figure {
+  position: relative;
+}
+.project-section .contents .card .thumbnail figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-section .contents .card .thumbnail .badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--small);
+  background-color: var(--s900);
+  border-radius: 15px;
+}
+.project-section .contents .card .thumbnail .badge span {
+  font-size: var(--medium);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: -0.28px;
+}
+.project-section .contents .card .thumbnail .badge.complete {
+  background-color: var(--p600);
+}
+.project-section .contents .card .card-info {
+  position: relative;
+  padding: var(--xx-large);
+}
+.project-section .contents .card .card-info .card-title {
+  position: relative;
+  width: 100%;
+  margin-bottom: var(--large);
+}
+.project-section .contents .card .card-info .card-title .cate {
+  position: relative;
+}
+.project-section .contents .card .card-info .card-title .cate span {
+  font-size: var(--medium);
+  line-height: 1.4;
+  color: var(--g500);
+  letter-spacing: -0.28px;
+}
+.project-section .contents .card .card-info .card-title .info {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.project-section .contents .card .card-info .card-title .info h4 {
+  font-size: var(--x-large);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--s900);
+  letter-spacing: -0.4px;
+}
+.project-section .contents .card .card-info .card-title .info p {
+  color: var(--s800);
+}
+.project-section .contents .card .card-info .skill-tag {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: var(--x-small);
+  align-items: center;
+  margin-bottom: var(--xx-large);
+}
+.project-section .contents .card .card-info .skill-tag .tag {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--small);
+  background-color: var(--g100);
+  border-radius: 15px;
+}
+.project-section .contents .card .card-info .skill-tag .tag span {
+  font-size: var(--small);
+  line-height: 1.4;
+  color: var(--g600);
+  letter-spacing: -0.24px;
+}
+.project-section .contents .card .card-info .show-more {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: var(--x-small);
+  align-items: center;
+  justify-content: center;
+  padding: var(--small) 0;
+  border: 1px solid var(--s900);
+  border-radius: var(--small);
+}
+.project-section .contents .card .card-info .show-more img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.project-section .contents .card .card-info .show-more span {
+  font-weight: 500;
+  color: var(--s900);
+}
+
+/* contact section */
+.contact-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--s900);
+}
+.contact-section .inner {
+  position: relative;
+  width: 100%;
+  min-width: 1025px;
+  max-width: 1280px;
+  display: flex;
+  gap: var(--xxx-large);
+  align-items: center;
+  padding: 120px 40px;
+}
+.contact-section .section-title {
+  position: relative;
+  flex: 1 0 0;
+}
+.contact-section .section-title .title {
+  position: relative;
+  margin-bottom: var(--xx-large);
+}
+.contact-section .section-title .title h2 {
+  font-size: var(--big);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--white);
+  letter-spacing: -1.12px;
+}
+.contact-section .section-title .sub-title {
+  position: relative;
+  margin-bottom: var(--large);
+}
+.contact-section .section-title .sub-title p {
+  font-size: var(--xx-large);
+  font-weight: 600;
+  color: var(--s100);
+  letter-spacing: -0.48px;
+}
+.contact-section .section-title .info-list {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.contact-section .section-title .info-list .info {
+  position: relative;
+  display: flex;
+  gap: var(--small);
+  align-items: center;
+}
+.contact-section .section-title .info-list .info img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.contact-section .section-title .info-list .info span {
+  color: var(--s100);
+}
+.contact-section .contact {
+  position: relative;
+  display: flex;
+  gap: var(--xx-large);
+  flex: 1 0 0;
+  flex-direction: column;
+  padding: var(--xxx-large);
+  background-color: var(--white);
+  border-radius: var(--large);
+}
+.contact-section .contact .cta-title {
+  position: relative;
+}
+.contact-section .contact .cta-title h4 {
+  font-size: var(--xx-large);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--s900);
+  letter-spacing: -0.48px;
+}
+.contact-section .contact .cta-list {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.contact-section .contact .cta-list li {
+  position: relative;
+}
+.contact-section .contact .cta-list li a {
+  display: flex;
+  gap: var(--xx-small);
+  flex-direction: column;
+  padding: var(--large) var(--xx-large);
+  background-color: var(--g100);
+  border-radius: 10px;
+}
+.contact-section .contact .cta-list li a .icon {
+  position: relative;
+  display: flex;
+  gap: var(--xx-small);
+  align-items: center;
+}
+.contact-section .contact .cta-list li a .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.contact-section .contact .cta-list li a .icon span {
+  color: var(--s900);
+}
+.contact-section .contact .cta-list li a p {
+  color: var(--g600);
+}
+
+/* footer section */
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--g900);
+}
+.footer .inner {
+  position: relative;
+  width: 100%;
+  min-width: 1025px;
+  max-width: 1280px;
+  display: flex;
+  gap: var(--xx-large);
+  flex-direction: column;
+  padding: 24px var(--xx-large);
+}
+.footer-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--xx-large);
+}
+.footer-top .logo {
+  position: relative;
+}
+.footer-top .logo a {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer-top .cate {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer-top .cate h4 {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer-top .cate ul {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.footer-top .cate ul li {
+  position: relative;
+}
+.footer-top .cate ul li a {
+  color: var(--g400);
+}
+.footer-top .sitemap {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer-top .sitemap h4 {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer-top .sitemap ul {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.footer-top .sitemap ul li {
+  position: relative;
+}
+.footer-top .sitemap ul li a {
+  color: var(--g400);
+}
+.footer-top .sns {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer-top .sns h4 {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer-top .sns ul {
+}
+.footer-top .sns ul li {
+}
+.footer-top .sns ul li a {
+}
+.footer-top .sns ul li a img {
+}
+.footer-bottom {
+}
+.footer-bottom .copyright {
+}
+.footer-bottom .copyright span {
+}
+.footer-bottom .policies {
+}
+.footer-bottom .policies a {
+}
